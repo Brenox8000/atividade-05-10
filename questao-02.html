@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 02</title>
+</head>
+<body>
+    <script>
+    		let next_product = 's'
+        var product_valor = 0
+        
+        while(next_product=='s'){
+        	product_valor = product_valor + Number(prompt("Valor do produto: "))
+          
+          next_product = prompt("Adicionar mais um produto? (s/n): ")
+          while(next_product !='s'&& next_product !='n'){
+          	alert(`Entrada inválida, digite s ou n`)
+          	next_product = prompt("Adicionar mais um produto? (s/n): ") 
+          }
+        }
+        
+        alert(`Total: R$ ${product_valor}`)
+        let dinheiro_cliente = Number(prompt("Quantia dada para o pagamento: "))
+        alert(`Troco: R$ ${dinheiro_cliente - product_valor}`)
+       
+    </script>
+</body>
+</html>

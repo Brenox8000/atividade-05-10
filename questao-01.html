@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 01</title>
+</head>
+<body>
+    <script>
+  	let i = 0
+        let in_limit = 0
+        let out_limit = 0
+        
+        while(i<10){
+        	let valor = Number(prompt("Numero: "))
+        	
+          if(valor>=10 && valor<=20){
+          	in_limit = in_limit + 1
+          }else{
+          	out_limit = out_limit + 1
+          }
+          
+        	i = i+1
+        }
+        
+       	alert(`${in_limit} valores dentro do limite\n${out_limit} valores fora do limite`)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 04</title>
+</head>
+<body>
+    <script>
+        
+    do{
+        const ano = Number(prompt("Insira o ano: "))
+        if (ano == 0) {
+            break
+        } else if (ano == 1942 || ano == 1946) {
+            alert(`Não houve Copa em ${ano} - Segunda Guerra Mundial`)
+        } else if (ano >= 1930 && ano % 4 == 2){
+            alert(`Sim, ${ano} é ano de Copa do Mundo.`)
+        } else {
+            alert(`Não, ${ano} não é ano de Copa do Mundo`)
+        }
+    } while(true)
+    </script>
+</body>
+</html>
